@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.nav_demo_2_body{
+    background: #BAE5F4;
+}
+
+.nav_demo_2_html,
+.nav_demo_2_body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+}
+
+.nav_demo_2_wrapper{
+    height: 60px;
+    width: 55vw;
+    line-height: 60px;
+    background: #a6cddb;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.nav_demo_2_wrapper 
+.nav_demo_2_nav{
+    position: relative;
+    display: flex;
+}
+
+.nav_demo_2_wrapper .nav_demo_2_nav label{
+    z-index: 1;
+    flex: 1;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav_demo_2_wrapper .nav_demo_2_nav label a{
+    position: relative;
+    z-index: -1;
+    color: #000;
+    font-family: 'poppins',sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.6s ease;
+}
+
+.nav_demo_2_wrapper nav .tab{
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #f8997d 0%, #ad336d 100%);
+    border-radius: 50px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nav_demo_2_wrapper .nav_demo_2_nav #contact:checked ~ .tab{
+    left: 25%;
+}
+
+.nav_demo_2_wrapper .nav_demo_2_nav #about:checked ~ .tab{
+    left: 50%;
+}
+
+.nav_demo_2_wrapper .nav_demo_2_nav #work:checked ~ .tab{
+    left: 75%;
+}
+
+.nav_demo_2_wrapper .nav_demo_2_nav input{
+    display: none;
+}
